@@ -34,7 +34,7 @@ const FeaturedProject = ({ type, title, summary, img, images, link, github }) =>
                         width={1000}
                         alt='image'
                         priority
-                        className='h-full w-full object-cover'
+                        className='object-contain'
                     />
                     <div className="absolute flex inset-0 items-end justify-between mx-2 mb-5">
                         {!(current === 0) ?
@@ -62,7 +62,7 @@ const FeaturedProject = ({ type, title, summary, img, images, link, github }) =>
             <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
                 <span className='text-rose-400 font-medium text-xl dark:text-primaryDark xs:text-base'>{type}</span>
                 <Link className=' hover:underline underline-offset-2' href={link} target='_blank'>
-                    <h2 className=' my-2 w-full text-left text-4xl font-bold sm:text-sm'>{title}</h2>
+                    <h2 className=' my-2 w-full text-left text-4xl font-bold sm:text-base'>{title}</h2>
                 </Link>
                 <p className=' my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
                 <div className=' mt-2 flex items-center w-full gap-4'>
@@ -108,7 +108,7 @@ const Project = ({ type, title, img, link, github }) => {
             <div className='w-full  flex flex-col items-start justify-between mt-4'>
                 <span className='text-rose-400 dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base'>{type}</span>
                 <Link className=' hover:underline underline-offset-2' href={link} target='_blank'>
-                    <h2 className=' my-2 w-full text-left text-3xl font-bold lg:text-2xl'>{title}</h2>
+                    <h2 className=' my-2 w-full text-left text-2xl font-bold sm:text-base'>{title}</h2>
                 </Link>
                 <div className='w-full mt-2 flex items-center justify-between'>
                     <Link href={github} target='_blank' className=' w-fit rounded-lg text-dark p-2 px-6 text-lg font-semibold dark:text-light border border-dark dark:border-light sm:px-4 sm:text-base flex items-center gap-2 justify-center hover:text-opacity-70 hover:bg-zinc-200/45 transition'>
@@ -131,35 +131,36 @@ export default function projects() {
             <main className=' w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
                 <Layout className=' pt-16'>
                     <AnimatedText text="Imagination Trumps Knowledge!" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />
-                    <div className=' grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
-                        <>
-                            {projectList.map((project, id) => project.type === 'Featured Project' && (
-                                <div key={id} className="col-span-12" >
-                                    <FeaturedProject
-                                        key={project.id}
-                                        title={project.title}
-                                        img={project.photoUrl}
-                                        link={project.link}
-                                        github={project.GitHub}
-                                        summary={project.summary}
-                                        images={project.photoUrl}
-                                        type="Featured Project"
-                                    />
-                                </div>
-                            ))}
-                            {projectList.map((project, id) => project.type === 'Project' && (
-                                <div key={id} className="col-span-6 sm:col-span-12" >
-                                    <Project
-                                        key={project.id}
-                                        title={project.title}
-                                        img={project.photoUrl[0]}
-                                        link={project.link}
-                                        github={project.GitHub}
-                                        type="Project"
-                                    />
-                                </div>
-                            ))}
-                        </>
+                    <div className=' grid grid-cols-12 gap-24 gap-y-14 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
+                        {projectList.map((project, id) => project.type === 'Featured Project' && (
+                            <div key={id} className="col-span-12" >
+                                <FeaturedProject
+                                    key={project.id}
+                                    title={project.title}
+                                    img={project.photoUrl}
+                                    link={project.link}
+                                    github={project.GitHub}
+                                    summary={project.summary}
+                                    images={project.photoUrl}
+                                    type="Featured Project"
+                                />
+                            </div>
+                        ))}
+                    </div>
+                    <h2 className="mt-24 mb-6 text-2xl font-semibold">Projects</h2>
+                    <div className='grid grid-cols-12 gap-12 gap-y-7 xl:gap-x-8 lg:gap-x-4 md:gap-y-12 sm:gap-x-0'>
+                        {projectList.map((project, id) => project.type === 'Project' && (
+                            <div key={id} className="col-span-4 xl:col-span-6 sm:col-span-12" >
+                                <Project
+                                    key={project.id}
+                                    title={project.title}
+                                    img={project.photoUrl[0]}
+                                    link={project.link}
+                                    github={project.GitHub}
+                                    type="Project"
+                                />
+                            </div>
+                        ))}
                     </div>
                 </Layout>
             </main >
