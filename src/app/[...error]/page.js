@@ -9,7 +9,7 @@ export default function Error() {
         <>
             <TransitionEffect />
             <div className="absolute top-0 left-0 w-screen h-screen overflow-hidden">
-                <section className="relative z-10 bg-blue-600 w-full h-full">
+                <section className="relative z-10 bg-zinc-500 w-full h-full">
                     <div className="w-full h-full flex items-center justify-center">
                         <div className="mx-auto max-w-[400px] text-center">
                             <div className="flex items-center justify-center gap-4">
@@ -26,7 +26,7 @@ export default function Error() {
                             </p>
                             <Link
                                 href="/"
-                                className="inline-block rounded-lg border border-white px-8 py-3 text-center text-base font-semibold text-white transition hover:bg-white hover:text-blue-600"
+                                className="inline-block rounded-lg border border-white px-8 py-3 text-center text-base font-semibold text-white transition hover:bg-white hover:text-zinc-500"
                             >
                                 Go To Home
                             </Link>
