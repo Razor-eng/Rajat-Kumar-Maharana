@@ -1,0 +1,18 @@
+import Amazon from '../../../public/images/projects/OLD/Amazon/1.png'
+import Airbnb from '../../../public/images/projects/OLD/Airbnb/Airbnb1.jpg'
+import Twitter from '../../../public/images/projects/OLD/Twitter/Twitter1.jpg'
+import LinkedIn from '../../../public/images/projects/OLD/LinkedIn/LinkedIn2.jpg'
+import Spoogle from '../../../public/images/projects/OLD/Spoogle/2.png'
+import Hulu from '../../../public/images/projects/OLD/Hulu/Hulu1.jpg'
+import Youtube from '../../../public/images/projects/OLD/Youtube/Youtube1.jpg'
+import JustBuy from '../../../public/images/projects/OLD/JustBuy/1.png'
+import AiImageGenerator from '../../../public/images/projects/OLD/AI-ImageGenerator/2.jpg'
+import GetFit from '../../../public/images/projects/OLD/GetFit/1.png'
+import Disney from '../../../public/images/projects/OLD/Disney/Disney2.jpg'
+import Netflix from '../../../public/images/projects/OLD/NetflixNew/3.png'
+import NetflixNew from '../../../public/images/projects/OLD/Netflix/Netflix3.jpg'
+import TextUtils from '../../../public/images/projects/OLD/TextUtils/3.png'
+import Tesla from '../../../public/images/projects/OLD/Tesla/1.png'
+import WhatsApp from '../../../public/images/projects/OLD/WhatsApp/2.jpg'
+
+export default { Amazon, TextUtils, Tesla, Airbnb, Twitter, LinkedIn, Spoogle, WhatsApp, Hulu, Youtube, AiImageGenerator, JustBuy, GetFit, Disney, Netflix, NetflixNew };
