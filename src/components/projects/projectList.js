@@ -1,6 +1,4 @@
-import projectImg from './index'
-
-export const projectList = [
+export const FeaturedProjectList = [
     {
         title: 'Slack',
         link: 'https://slack-r.vercel.app/',
@@ -10,7 +8,8 @@ export const projectList = [
             '/images/projects/Slack/img1.png',
         ],
         type: "Featured Project",
-        summary: `A application catering to the needs of professionals. This app is a clone of slack which allows users to create workspaces, add channels, invite others to your workspace and communicate.`
+        techs: ['Next', 'Typescript', 'TailwindCSS', 'Convex'],
+        summary: `A application catering to the needs of professionals. This app is a clone of slack which allows users to create workspaces, add channels, invite others to your workspace and communicate.`,
     },
     {
         title: 'Jira',
@@ -21,7 +20,8 @@ export const projectList = [
             '/images/projects/Jira/img1.png',
         ],
         type: "Featured Project",
-        summary: `A application that allows teams to track issues, manage projects, and automate workflows. This application allows users to create projects and add tasks to it. Key features include user authentication, member invitations and settings functionality.`
+        techs: ['Next', 'Typescript', 'TailwindCSS', 'AppWrite'],
+        summary: `A application that allows teams to track issues, manage projects, and automate workflows. This application allows users to create projects and add tasks to it. Key features include user authentication, member invitations and settings functionality.`,
     },
     {
         title: 'Gemini AI',
@@ -33,6 +33,7 @@ export const projectList = [
             '/images/projects/Gemini/img2.png',
         ],
         type: "Featured Project",
+        techs: ['Vite', 'React', 'TailwindCSS', 'Firebase'],
         summary: `A fully responsive gemini clone which can generate text based on user prompts.`
     },
     {
@@ -45,8 +46,37 @@ export const projectList = [
             '/images/projects/Storeit/img2.png',
         ],
         type: "Featured Project",
+        techs: ['Next', 'Typescript', 'TailwindCSS', 'AppWrite'],
         summary: `A fully responsive gemini clone which can generate text based on user prompts.`
     },
+    {
+        title: 'EasyBuyy',
+        link: 'https://easybuyy.vercel.app/',
+        GitHub: 'https://github.com/Razor-eng/Ecommerce-2024',
+        photoUrl: [
+            '/images/projects/EasyBuyy/img1.png',
+            '/images/projects/EasyBuyy/img2.png',
+            '/images/projects/EasyBuyy/img3.png',
+        ],
+        type: "Featured Project",
+        techs: ['Next', 'React', 'TailwindCSS', 'Firebase'],
+        summary: `A fully responsive E-Commerce website with admin panel to upload or update any product as well to change the status of orders.`
+    },
+    {
+        title: 'Instagram',
+        link: 'https://instagram-2024.vercel.app/',
+        GitHub: 'https://github.com/Razor-eng/Instagram-2024',
+        photoUrl: [
+            '/images/projects/Instagram/img1.png',
+            '/images/projects/Instagram/img2.png',
+        ],
+        type: "Featured Project",
+        techs: ['React', 'Redux', 'Chakra-UI', 'Firebase', 'React-Router-Dom'],
+        summary: "A Instagram clone App using Next, Tailwind CSS, Firebase, React Router. The app lets you post, comment, like and follow others."
+    },
+]
+
+export const ProjectList = [
     {
         title: 'Vercel',
         link: 'https://vercel-r.vercel.app/',
@@ -67,7 +97,7 @@ export const projectList = [
             '/images/projects/Github/img2.png',
             '/images/projects/Github/img1.png',
         ],
-        type: "Featured Project",
+        type: "Project",
         summary: `A fully responsive Github Clone with functionalities like creating a repository and authentication.`
     },
     {
@@ -90,18 +120,6 @@ export const projectList = [
         ],
         type: "Project",
         summary: `A fully responsive application to know the weather forecast along with way other details of every location.`
-    },
-    {
-        title: 'EasyBuyy',
-        link: 'https://easybuyy.vercel.app/',
-        GitHub: 'https://github.com/Razor-eng/Ecommerce-2024',
-        photoUrl: [
-            '/images/projects/EasyBuyy/img1.png',
-            '/images/projects/EasyBuyy/img2.png',
-            '/images/projects/EasyBuyy/img3.png',
-        ],
-        type: "Featured Project",
-        summary: `A fully responsive E-Commerce website with admin panel to upload or update any product as well to change the status of orders.`
     },
     {
         title: 'ChatEasy',
@@ -166,48 +184,16 @@ export const projectList = [
         ],
         type: "Project",
     },
-    {
-        title: 'Instagram',
-        link: 'https://instagram-2024.vercel.app/',
-        GitHub: 'https://github.com/Razor-eng/Instagram-2024',
-        photoUrl: [
-            '/images/projects/Instagram/img1.png',
-            '/images/projects/Instagram/img2.png',
-        ],
-        type: "Featured Project",
-        summary: "A Instagram clone App using Next, Tailwind CSS, Firebase, React Router. The app lets you post, comment, like and follow others."
-    },
-    {
-        title: 'GameZone',
-        link: 'https://gamezone-2024.vercel.app/',
-        GitHub: 'https://github.com/Razor-eng/GameZone-2024',
-        photoUrl: [
-            '/images/projects/GameZone/img1.png',
-            '/images/projects/GameZone/img2.png',
-        ],
-        type: "Project",
-    },
-    {
-        title: 'LinkedIn',
-        link: 'https://linkedin-2024.vercel.app/',
-        GitHub: 'https://github.com/Razor-eng/LinkedIn-2024',
-        photoUrl: [
-            '/images/projects/Linkedin/img1.png',
-            '/images/projects/Linkedin/img2.png',
-        ],
-        type: "Project",
-    },
-    {
-        title: 'Schedular',
-        link: 'https://schedular-2024.vercel.app/',
-        GitHub: 'https://github.com/Razor-eng/Schedular-2024',
-        photoUrl: [
-            '/images/projects/Schedular/img2.png',
-            '/images/projects/Schedular/img1.png',
-        ],
-        type: "Project",
-    },
 ]
+
+
+
+
+
+
+
+
+// import projectImg from './index'
 // export const projectList = [
 //     {
 //         id: 1,

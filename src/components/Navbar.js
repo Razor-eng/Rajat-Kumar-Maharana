@@ -15,14 +15,12 @@ const CustomLink = ({ href, title, className = "" }) => {
     return (
         <Link href={href} className={`${className} relative group`}>
             {title}
-
             <span className={`
                 h-[1px] inline-block bg-dark 
                 absolute left-0 -bottom-0.5
                 group-hover:w-full translate-[width] ease duration-300
                 ${path === href ? 'w-full' : 'w-0'}
-            dark:bg-light `}
-
+                dark:bg-light `}
             >
                 &nbsp;
             </span>
@@ -32,19 +30,19 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 const CustomMobileLink = ({ href, title, className = "", toggle }) => {
     const router = useRouter();
+    const path = usePathname();
     const handleClick = () => {
         toggle();
         router.push(href);
     }
     return (
-        <button href={href} className={`${className} relative group text-light dark:text-dark my-2`} onClick={handleClick}>
+        <button href={href} className={`${className} font-semibold text-lg relative group text-light dark:text-light my-2`} onClick={handleClick}>
             {title}
             <span className={`
-                h-[1px] inline-block bg-light 
+                h-[1px] inline-block bg-light dark:bg-light 
                 absolute left-0 -bottom-0.5
                 group-hover:w-full translate-[width] ease duration-300
-                ${router.asPath === href ? 'w-full' : 'w-0'}
-                dark:bg-dark`}
+                ${path === href ? 'w-full' : 'w-0'}`}
             >
                 &nbsp;
             </span>
@@ -74,6 +72,7 @@ const Navbar = () => {
                 <nav>
                     <CustomLink href="/" title="Home" className='mr-4' />
                     <CustomLink href="/about" title="About" className='mx-4' />
+                    <CustomLink href="/skills" title="Skills" className='ml-4' />
                     <CustomLink href="/projects" title="Projects" className='mx-4' />
                     {/* <CustomLink href="/articles" title="Articles" className='ml-4' /> */}
                 </nav>
@@ -134,17 +133,18 @@ const Navbar = () => {
                     <motion.div
                         initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
                         animate={{ scale: 1, opacity: 1 }}
-                        className=' min-w-{70vw} flex flex-col w-full justify-between items-center z-30 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                        bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
+                        className='min-w-{70vw} flex flex-col w-full justify-between items-center z-30 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                        bg-dark/90 dark:bg-dark/60 border rounded-lg backdrop-blur-md py-32
                     '>
-                        <nav className=' flex items-center flex-col justify-center'>
+                        <nav className='flex items-center flex-col justify-center'>
                             <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
                             <CustomMobileLink href="/about" title="About" className='' toggle={handleClick} />
+                            <CustomMobileLink href="/skills" title="Skills" className='' toggle={handleClick} />
                             <CustomMobileLink href="/projects" title="Projects" className='' toggle={handleClick} />
                             {/* <CustomMobileLink href="/articles" title="Articles" className='' toggle={handleClick} /> */}
                         </nav>
 
-                        <nav className=' flex items-center justify-center flex-wrap mt-2'>
+                        <nav className='flex items-center justify-center flex-wrap mt-2'>
                             {/* <motion.a href="https://twitter.com" target={"_blank"}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
@@ -152,14 +152,14 @@ const Navbar = () => {
                             >
                                 <TwitterIcon />
                             </motion.a> */}
-                            <motion.a href="https://github.com" target={"_blank"}
+                            <motion.a href="https://github.com/razor-eng" target={"_blank"}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                                 className='bg-light rounded-full dark:bg-dark w-6 mx-3 sm:mx-1'
                             >
                                 <GithubIcon />
                             </motion.a>
-                            <motion.a href="https://linkedin.com" target={"_blank"}
+                            <motion.a href="https://www.linkedin.com/in/rajat-kumar-maharana-80103820b/" target={"_blank"}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                                 className=' w-6 mx-3 sm:mx-1'
@@ -198,8 +198,8 @@ const Navbar = () => {
             }
 
 
-            <div className=' absolute top-2 md:left-[5%] lg:left-[85%] translate-x-[-50%]'>
-                <div className='absolute w-8 lg:w-10 xs:w-5 hidden lg:inline-block md:top-3 md:left-[6rem] xs:left-[4rem]'>
+            <div className='absolute top-2 md:left-[70%] lg:left-[85%] translate-x-[-50%]'>
+                <div className='absolute w-8 lg:w-10 xs:w-5 hidden lg:inline-block md:top-2 md:left-[6rem] xs:left-[4rem]'>
                     <Image onClick={() => setMode(mode === "light" ? "dark" : "light")} src={lightBulb} alt='Rajat' className={`rotate-180 w-full h-auto cursor-pointer md:w-12 md:h-12 md:text-[10px] ${mode === 'dark' ? 'grayscale' : ''}`} />
                 </div>
             </div>

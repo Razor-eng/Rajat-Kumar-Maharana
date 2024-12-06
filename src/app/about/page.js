@@ -46,16 +46,14 @@ export default function About() {
                     <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
                         <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                             <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
-                            <p className='font-medium'>Hi, {`I'm`} Rajat, a web developer and UI/UX designer with a passion for creating beautiful, functional,
-                                and user-centered digital experiences. With 4 years of experience in the field. I am always looking for
-                                new and innovative ways to bring my {`client's`} visions to life.
+                            <p className='font-medium'>
+                                Hi, {`I'm`} Rajat, a passionate and highly skilled Software Developer with a {`Bachelor's`} degree in Technology (B.Tech) in Computer Science, specializing in full-stack development. With over 3 years of experience, expertise spans across front-end and back-end technologies, including Java, React, TailwindCSS, MySQL, Next.js, and Vue.js.
                             </p>
-                            <p className='font-medium my-4'>I believe that design is about more than just making things look pretty – {`it's`} about solving problems and
-                                creating intuitive, enjoyable experiences for users.
+                            <p className='font-medium my-4'>
+                                Having worked as a freelancer on platforms like Fiverr and Freelancer, have successfully delivered a wide range of projects, from creating responsive UIs with React and TailwindCSS to developing robust back-end solutions using Java and MySQL. Known for writing clean, scalable code and meeting client requirements with precision.
                             </p>
-                            <p className='font-medium'>Whether {`I'm`} working on a website, mobile app, or
-                                other digital product, I bring my commitment to design excellence and user-centered thinking to
-                                every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
+                            <p className='font-medium'>
+                                Focused on problem-solving, performance, and scalability, thrive in fast-paced environments, continuously exploring new technologies to stay ahead in the software development field.
                             </p>
                         </div>
 
@@ -64,10 +62,10 @@ export default function About() {
                             <Image src={ProfilePic} alt='Rajat' className='w-full h-auto rounded-2xl'
                                 priority
                                 sizes='
-                                (max-width:768px) 100vw,
-                                (max-width:1200px) 50vw,
-                                33vw
-                            '
+                                    (max-width:768px) 100vw,
+                                    (max-width:1200px) 50vw,
+                                    33vw
+                                '
                             />
                         </div>
 
@@ -80,7 +78,7 @@ export default function About() {
                             </div>
                             <div className=' flex flex-col items-end justify-center xl:items-center'>
                                 <span className=' inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                                    <AnimatedNumbers value={60} />+
+                                    <AnimatedNumbers value={40} />+
                                 </span>
                                 <h2 className=' text-xl xl:text-center md:text-lg sm:text-base xs:text-sm font-medium capitalize text-dark/75 dark:text-light/75'>projects completed</h2>
                             </div>
@@ -96,7 +94,7 @@ export default function About() {
 
                     <Skills />
                     <Education />
-                    {/* <Experience /> */}
+                    <Experience />
                 </Layout>
             </main >
         </>

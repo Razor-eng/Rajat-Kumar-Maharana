@@ -51,6 +51,14 @@ const Experience = () => {
                 />
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     <Details
+                        position="Front-End Developer"
+                        company="Fiverr"
+                        time="2024-Present"
+                        address="Remote"
+                        work="As a freelance Front-End Developer on Fiverr, I create responsive, user-friendly websites using HTML, CSS, JavaScript, React, and Vue.js. I’ve worked on e-commerce sites, portfolios, and landing pages, ensuring mobile optimization and great user experiences. My focus is on delivering high-quality work with clear communication and timely delivery, leading to strong client relationships and repeat business."
+                        companyLink="www.fiverr.com"
+                    />
+                    {/* <Details
                         position="Software Engineer"
                         company="Google"
                         time="2022-Present"
@@ -89,17 +97,7 @@ const Experience = () => {
                         search engine, including improving the accuracy and relevance of search results and
                         developing new tools for data analysis and visualization."
                         companyLink="www.google.com"
-                    />
-                    <Details
-                        position="Software Engineer"
-                        company="Google"
-                        time="2022-Present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's
-                        search engine, including improving the accuracy and relevance of search results and
-                        developing new tools for data analysis and visualization."
-                        companyLink="www.google.com"
-                    />
+                    /> */}
                 </ul>
             </div>
         </div>
