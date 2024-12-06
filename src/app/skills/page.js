@@ -4,10 +4,10 @@ import Layout from '@/components/Layout'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 import MySkills from '@/components/skills/MySkills'
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
 
 function Skill() {
-    const router = useRouter();
+    // const router = useRouter();
 
     return (
         <div className="min-h-screen flex flex-col gap-8 items-center">
@@ -31,7 +31,7 @@ function Skill() {
                         {category.skills.map((skill, index) => (
                             <motion.div
                                 key={index}
-                                onClick={() => router.push(`/skills/${skill.name}`)}
+                                // onClick={() => router.push(`/skills/${skill.name}`)}
                                 className="bg-white dark:bg-zinc-800 rounded-lg shadow-lg overflow-hidden cursor-pointer"
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 animate={{ opacity: 1, scale: 1 }}
@@ -73,7 +73,7 @@ function Skill() {
 }
 
 
-const Skills = () => {
+export default function Skills() {
     return (
         <>
             <TransitionEffect />
@@ -86,5 +86,3 @@ const Skills = () => {
         </>
     )
 }
-
-export default Skills
