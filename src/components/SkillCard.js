@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-const SkillCard = ({ id, title, codes, Icon }) => {
+const SkillCard = ({ title, codes, Icon }) => {
     return (
         <motion.article
             initial={{ y: 200, opacity: 0 }}

@@ -2,8 +2,9 @@ import { AiFillCode } from "react-icons/ai"
 import { GrDeploy } from "react-icons/gr"
 import { FaBootstrap, FaCss3, FaDatabase, FaGitAlt, FaGithub, FaHtml5, FaJava, FaNode, FaPython, FaReact, FaRegCircle, FaTools } from "react-icons/fa"
 import { IoCodeSlash, IoLogoHtml5 } from "react-icons/io5"
-import { SiAppwrite, SiC, SiCplusplus, SiEclipseide, SiExpress, SiFirebase, SiHeroku, SiHono, SiMongodb, SiMysql, SiNetlify, SiNextdotjs, SiPycharm, SiRapid, SiRedux, SiShadcnui, SiSpring, SiTailwindcss, SiTypescript, SiVercel, SiVisualstudiocode, SiVite } from "react-icons/si"
+import { SiAppwrite, SiC, SiCplusplus, SiEclipseide, SiExpress, SiFirebase, SiHeroku, SiHono, SiMongodb, SiMysql, SiNetlify, SiNextdotjs, SiPycharm, SiRapid, SiRedux, SiShadcnui, SiSpring, SiTailwindcss, SiTypescript, SiVercel, SiVite } from "react-icons/si"
 import { IoLogoJavascript } from "react-icons/io5";
+import { BiLogoVisualStudio } from "react-icons/bi";
 
 const MySkills = [
     {
@@ -71,7 +72,7 @@ const MySkills = [
         skills: [
             { name: 'Git', icon: FaGitAlt, color: '#E84E31', description: "Git is a distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among programmers who are collaboratively developing source code during software development. Git's goals include speed, data integrity, and support for distributed, non-linear workflows." },
             { name: 'GitHub', icon: FaGithub, description: "GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project." },
-            { name: 'VS Code', icon: SiVisualstudiocode, color: '#24A4EA', description: "Visual Studio Code, also commonly referred to as VS Code, is a source-code editor developed by Microsoft for Windows, Linux, macOS and web browsers. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded version control with Git." },
+            { name: 'VS Code', icon: BiLogoVisualStudio, color: '#24A4EA', description: "Visual Studio Code, also commonly referred to as VS Code, is a source-code editor developed by Microsoft for Windows, Linux, macOS and web browsers. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded version control with Git." },
             { name: 'Eclipse', icon: SiEclipseide, color: '#2B2152', description: "Eclipse is an integrated development environment used in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment. It is the second-most-popular IDE for Java development, and, until 2016, was the most popular." },
             { name: 'PyCharm', icon: SiPycharm, color: '#28D88E', description: "PyCharm is a popular integrated development environment (IDE) for Python programming, developed by JetBrains. It provides a range of features like code completion, debugging, version control integration, and testing tools to help developers write, debug, and optimize Python code efficiently. PyCharm also supports web development frameworks (e.g., Django, Flask) and is available in both a free Community edition and a paid Professional edition with additional features." }
         ]
