@@ -1,9 +1,9 @@
 import { ThemeProvider } from "@/Provider/ThemeProvider";
-import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { AnimatePresence } from "framer-motion";
 import Footer from "@/components/Footer";
 import { Montserrat } from 'next/font/google'
+import "./globals.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
