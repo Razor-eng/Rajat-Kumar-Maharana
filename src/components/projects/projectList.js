@@ -1,15 +1,29 @@
 export const FeaturedProjectList = [
     {
-        title: 'Slack',
-        link: 'https://slack-r.vercel.app/',
-        GitHub: 'https://github.com/Razor-eng/Slack-2024',
+        title: 'StoreIt',
+        link: 'https://storeit-r.vercel.app/',
+        GitHub: 'https://github.com/Razor-eng/StoreIt-2024',
         photoUrl: [
-            '/images/projects/Slack/img2.png',
-            '/images/projects/Slack/img1.png',
+            '/images/projects/Storeit/img1.png',
+            '/images/projects/Storeit/img3.png',
+            '/images/projects/Storeit/img2.png',
         ],
         type: "Featured Project",
-        techs: ['Next', 'Typescript', 'TailwindCSS', 'Convex'],
-        summary: `A application catering to the needs of professionals. This app is a clone of slack which allows users to create workspaces, add channels, invite others to your workspace and communicate.`,
+        techs: ['Next', 'Typescript', 'TailwindCSS', 'AppWrite'],
+        summary: `StoreIt is a file storage web app built with Next.js, TypeScript, Appwrite, and Tailwind CSS. It offers a seamless and secure way to upload, store, and manage files, utilizing Next.js for fast performance, TypeScript for reliable development, Appwrite for backend file storage, and Tailwind CSS for a responsive, user-friendly design. Ideal for personal or team use, StoreIt ensures efficient file management with a modern, scalable approach.`
+    },
+    {
+        title: 'EasyBuyy',
+        link: 'https://easybuyy.vercel.app/',
+        GitHub: 'https://github.com/Razor-eng/Ecommerce-2024',
+        photoUrl: [
+            '/images/projects/EasyBuyy/img1.png',
+            '/images/projects/EasyBuyy/img2.png',
+            '/images/projects/EasyBuyy/img3.png',
+        ],
+        type: "Featured Project",
+        techs: ['Next', 'React', 'TailwindCSS', 'Firebase'],
+        summary: `A fully responsive E-Commerce website with admin panel to upload or update any product as well to change the status of orders.`
     },
     {
         title: 'Jira',
@@ -24,6 +38,18 @@ export const FeaturedProjectList = [
         summary: `A application that allows teams to track issues, manage projects, and automate workflows. This application allows users to create projects and add tasks to it. Key features include user authentication, member invitations and settings functionality.`,
     },
     {
+        title: 'Slack',
+        link: 'https://slack-r.vercel.app/',
+        GitHub: 'https://github.com/Razor-eng/Slack-2024',
+        photoUrl: [
+            '/images/projects/Slack/img2.png',
+            '/images/projects/Slack/img1.png',
+        ],
+        type: "Featured Project",
+        techs: ['Next', 'Typescript', 'TailwindCSS', 'Convex'],
+        summary: `A application catering to the needs of professionals. This app is a clone of slack which allows users to create workspaces, add channels, invite others to your workspace and communicate.`,
+    },
+    {
         title: 'Gemini AI',
         link: 'https://gemini-r.vercel.app/',
         GitHub: 'https://github.com/Razor-eng/Gemini-2024',
@@ -35,32 +61,6 @@ export const FeaturedProjectList = [
         type: "Featured Project",
         techs: ['Vite', 'React', 'TailwindCSS', 'Firebase'],
         summary: `A fully responsive gemini clone which can generate text based on user prompts.`
-    },
-    {
-        title: 'StoreIt',
-        link: 'https://storeit-r.vercel.app/',
-        GitHub: 'https://github.com/Razor-eng/StoreIt-2024',
-        photoUrl: [
-            '/images/projects/Storeit/img1.png',
-            '/images/projects/Storeit/img3.png',
-            '/images/projects/Storeit/img2.png',
-        ],
-        type: "Featured Project",
-        techs: ['Next', 'Typescript', 'TailwindCSS', 'AppWrite'],
-        summary: `A fully responsive gemini clone which can generate text based on user prompts.`
-    },
-    {
-        title: 'EasyBuyy',
-        link: 'https://easybuyy.vercel.app/',
-        GitHub: 'https://github.com/Razor-eng/Ecommerce-2024',
-        photoUrl: [
-            '/images/projects/EasyBuyy/img1.png',
-            '/images/projects/EasyBuyy/img2.png',
-            '/images/projects/EasyBuyy/img3.png',
-        ],
-        type: "Featured Project",
-        techs: ['Next', 'React', 'TailwindCSS', 'Firebase'],
-        summary: `A fully responsive E-Commerce website with admin panel to upload or update any product as well to change the status of orders.`
     },
     {
         title: 'Instagram',
@@ -77,6 +77,48 @@ export const FeaturedProjectList = [
 ]
 
 export const ProjectList = [
+    {
+        title: 'Klimate',
+        link: 'https://klimate-r.vercel.app/',
+        GitHub: 'https://github.com/Razor-eng/Klimate-2024',
+        photoUrl: [
+            '/images/projects/Klimate/img1.png',
+            '/images/projects/Klimate/img2.png',
+        ],
+        type: "Project",
+        summary: `A fully responsive application to know the weather forecast along with way other details of every location.`
+    },
+    {
+        title: 'ChatEasy',
+        link: 'https://chateasy.vercel.app/',
+        GitHub: 'https://github.com/Razor-eng/ChatEasy-2024',
+        photoUrl: [
+            '/images/projects/ChatEasy/img1.png',
+        ],
+        type: "Project",
+        summary: `A fully responsive chat app to communicate as well add new friend.`
+    },
+    {
+        title: 'Student Management System',
+        link: 'https://stms-2024.vercel.app/',
+        GitHub: 'https://github.com/Razor-eng/Student-Management-System-2024',
+        photoUrl: [
+            '/images/projects/STMS/img2.png',
+            '/images/projects/STMS/img3.png',
+            '/images/projects/STMS/img1.png',
+        ],
+        type: "Project",
+    },
+    {
+        title: 'Multi Apps',
+        link: 'https://multi-apps-2024.vercel.app/',
+        GitHub: 'https://github.com/Razor-eng/MultiApps-2024',
+        photoUrl: [
+            '/images/projects/MultiApps/img2.png',
+            '/images/projects/MultiApps/img1.png',
+        ],
+        type: "Project",
+    },
     {
         title: 'Vercel',
         link: 'https://vercel-r.vercel.app/',
@@ -111,27 +153,6 @@ export const ProjectList = [
         summary: `A fully responsive futuristic landing page.`
     },
     {
-        title: 'Klimate',
-        link: 'https://klimate-r.vercel.app/',
-        GitHub: 'https://github.com/Razor-eng/Klimate-2024',
-        photoUrl: [
-            '/images/projects/Klimate/img1.png',
-            '/images/projects/Klimate/img2.png',
-        ],
-        type: "Project",
-        summary: `A fully responsive application to know the weather forecast along with way other details of every location.`
-    },
-    {
-        title: 'ChatEasy',
-        link: 'https://chateasy.vercel.app/',
-        GitHub: 'https://github.com/Razor-eng/ChatEasy-2024',
-        photoUrl: [
-            '/images/projects/ChatEasy/img1.png',
-        ],
-        type: "Project",
-        summary: `A fully responsive chat app to communicate as well add new friend.`
-    },
-    {
         title: 'Gmail',
         link: 'https://gmail-tau.vercel.app/',
         GitHub: 'https://github.com/Razor-eng/Gmail',
@@ -160,27 +181,6 @@ export const ProjectList = [
         photoUrl: [
             '/images/projects/Twitter/img1.png',
             '/images/projects/Twitter/img2.png',
-        ],
-        type: "Project",
-    },
-    {
-        title: 'Student Management System',
-        link: 'https://stms-2024.vercel.app/',
-        GitHub: 'https://github.com/Razor-eng/Student-Management-System-2024',
-        photoUrl: [
-            '/images/projects/STMS/img2.png',
-            '/images/projects/STMS/img3.png',
-            '/images/projects/STMS/img1.png',
-        ],
-        type: "Project",
-    },
-    {
-        title: 'Multi Apps',
-        link: 'https://multi-apps-2024.vercel.app/',
-        GitHub: 'https://github.com/Razor-eng/MultiApps-2024',
-        photoUrl: [
-            '/images/projects/MultiApps/img2.png',
-            '/images/projects/MultiApps/img1.png',
         ],
         type: "Project",
     },

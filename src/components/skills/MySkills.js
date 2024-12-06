@@ -2,7 +2,7 @@ import { AiFillCode } from "react-icons/ai"
 import { GrDeploy } from "react-icons/gr"
 import { FaBootstrap, FaCss3, FaDatabase, FaGitAlt, FaGithub, FaHtml5, FaJava, FaNode, FaPython, FaReact, FaRegCircle, FaTools } from "react-icons/fa"
 import { IoCodeSlash, IoLogoHtml5 } from "react-icons/io5"
-import { SiAppwrite, SiC, SiCplusplus, SiEclipseide, SiExpress, SiFirebase, SiHeroku, SiHono, SiMongodb, SiMysql, SiNetlify, SiNextdotjs, SiPycharm, SiRapid, SiRedux, SiShadcnui, SiSpring, SiTailwindcss, SiTypescript, SiVercel, SiVite } from "react-icons/si"
+import { SiAppwrite, SiC, SiChakraui, SiCplusplus, SiEclipseide, SiExpress, SiFirebase, SiHeroku, SiHono, SiMongodb, SiMysql, SiNetlify, SiNextdotjs, SiPycharm, SiRapid, SiRedux, SiShadcnui, SiSpring, SiTailwindcss, SiTypescript, SiVercel, SiVite } from "react-icons/si"
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoVisualStudio } from "react-icons/bi";
 
@@ -32,6 +32,7 @@ const MySkills = [
             { name: 'Redux', icon: SiRedux, color: '#7348B5', description: "Redux is an open-source JavaScript library for managing and centralizing application state. It is most commonly used with libraries such as React or Angular for building user interfaces. Similar to Facebook's Flux architecture, it was created by Dan Abramov and Andrew Clark." },
             { name: 'Vite', icon: SiVite, color: '#AC47E1', description: 'Vite is a local development server written by Evan You, the creator of Vue.js, and used by default by Vue and for React project templates. It has support for TypeScript and JSX. It uses Rollup and esbuild internally for bundling.' },
             { name: 'Bootstrap', icon: FaBootstrap, color: '#7A11F3', description: 'Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.' },
+            { name: 'Chakra-Ui', icon: SiChakraui, color: '#319795', description: 'Chakra UI is a modern, open-source React component library that provides a set of accessible, customizable, and reusable UI components. It simplifies the process of building user interfaces with a focus on ease of use, responsiveness, and accessibility. Chakra UI follows best practices, offering features like theming, built-in accessibility support, and a consistent design system for fast and efficient development.' },
         ]
     },
     {

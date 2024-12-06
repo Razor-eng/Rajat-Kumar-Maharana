@@ -95,8 +95,8 @@ const ImageSlider = ({ images }) => {
 
 const FeaturedProject = ({ title, summary, images, link, github, techs }) => {
     return (
-        <motion.article
-            initial={{ y: 200, opacity: 0 }}
+        <motion.div
+            initial={{ y: 100, opacity: 0 }}
             whileInView={{
                 y: 0,
                 opacity: 1,
@@ -106,38 +106,40 @@ const FeaturedProject = ({ title, summary, images, link, github, techs }) => {
                     staggerChildren: 0.08,
                 }
             }}
-            className='w-full flex flex-col p-3 items-center relative justify-between rounded-lg rounded-br-2xl bg-sky-50 shadow-2xl dark:bg-[#282828] lg:flex-col md:p-2 md:py-3 dark:shadow dark:shadow-light'
+            className='w-full flex flex-col p-3 items-center relative justify-between rounded-lg rounded-br-2xl bg-sky-50 shadow-md dark:bg-[#282828] lg:flex-col md:p-2 md:py-3 dark:shadow dark:shadow-light'
         >
             <ImageSlider images={images} />
-            <motion.div
-                className="flex items-center space-x-2 px-4 py-2 rounded-bl-md bg-gradient-to-r from-indigo-500 to-indigo-600 text-white font-semibold text-sm shadow-md hover:scale-105 transition-transform duration-300 ease-in-out dark:bg-gradient-to-r dark:from-indigo-700 dark:to-indigo-800 absolute top-3 right-3 md:right-2 md:top-3 opacity-80 cursor-pointer"
-                whileHover={{
-                    scale: 1.05,
-                    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-                    transition: { duration: 0.1 },
-                }}
-                whileTap={{
-                    scale: 0.98,
-                    boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.08)",
-                    transition: { duration: 0.1 },
-                }}
-            >
-                <FaStar className="text-xl text-amber-500 dark:text-amber-400" />
-                <span className="font-medium text-sm">Featured Project</span>
-            </motion.div>
             <div className='w-full flex flex-col items-start justify-between lg:w-full lg:pl-0 pt-3 md:pt-2'>
-                <Link href={link} target='_blank'>
-                    <h2 className='relative group w-full text-left text-3xl font-bold sm:text-2xl'>
-                        {title}
-                        <span className="h-[2px] w-0 inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full translate-[width] ease duration-300 dark:bg-light">
-                            &nbsp;
-                        </span>
-                    </h2>
-                </Link>
+                <div className="flex items-center justify-between w-full">
+                    <Link href={`/projects/featured/${title}`} target='_blank'>
+                        <h2 className='relative w-full text-left text-3xl font-semibold sm:text-2xl mb-2 group'>
+                            {title}
+                            <span className="h-[2px] w-0 inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full translate-[width] ease duration-300 dark:bg-light">
+                                &nbsp;
+                            </span>
+                        </h2>
+                    </Link>
+                    <motion.div
+                        className="flex items-center justify-center space-x-2 px-3 py-2 rounded-2xl bg-orange-100 font-semibold text-sm shadow-sm hover:scale-105 transition-transform duration-300 ease-in-out dark:bg-rose-500 cursor-pointer"
+                        whileHover={{
+                            scale: 1.05,
+                            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+                            transition: { duration: 0.1 },
+                        }}
+                        whileTap={{
+                            scale: 0.98,
+                            boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.08)",
+                            transition: { duration: 0.1 },
+                        }}
+                    >
+                        <FaStar className="text-sm text-amber-500 dark:text-amber-400" />
+                        <span className="text-xs">Featured Project</span>
+                    </motion.div>
+                </div>
                 <p className='my-2 font-medium text-dark dark:text-light sm:text-sm line-clamp-2'>
                     {summary}
                 </p>
-                <div className="w-full grid items-center grid-cols-2 gap-3 text-sm shadow rounded-md shadow-zinc-400 dark:shadow-zinc-500 p-3">
+                <div className="w-full grid items-center grid-cols-2 gap-2 shadow text-sm p-1 mt-3">
                     {techs?.map((tech, id) => id < 4 && (
                         <div
                             key={id}
@@ -158,22 +160,22 @@ const FeaturedProject = ({ title, summary, images, link, github, techs }) => {
                         <span className="text-base font-semibold md:hidden">GitHub</span>
                     </Link>
                     <Link
-                        href={link}
+                        href={`/projects/featured/${title}`}
                         target='_blank'
                         className="flex items-center justify-center bg-blue-600 text-white px-6 py-2.5 rounded-lg shadow-md hover:bg-blue-700 transform transition duration-300 ease-in-out hover:scale-105 sm:w-full w-48"
                     >
                         <HiExternalLink className="text-xl mr-2 md:hidden" />
-                        <span className="text-base font-semibold">Visit</span>
+                        <span className="text-base font-semibold">View</span>
                     </Link>
                 </div>
             </div>
-        </motion.article>
+        </motion.div>
     )
 }
 
 const Project = ({ title, img, link, github }) => {
     return (
-        <div className="w-full rounded-lg overflow-hidden shadow-lg bg-green-50 dark:bg-[#292939] transition-all duration-300 p-1">
+        <div className="w-full rounded-lg overflow-hidden shadow-lg bg-purple-100 dark:bg-[#292939] transition-all duration-300 p-1">
             <FramerImage
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
@@ -189,8 +191,17 @@ const Project = ({ title, img, link, github }) => {
                     50vw
                 '
             />
-            <div className="p-4">
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4 line-clamp-1">{title}</h2>
+            <div className="p-2">
+                <Link href={`/projects/project/${title}`} target='_blank'>
+                    <h2 className='relative text-lg font-semibold text-gray-800 dark:text-white group w-fit'>
+                        <span className='line-clamp-1'>
+                            {title}
+                        </span>
+                        <span className="h-[2px] w-0 inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full translate-[width] ease duration-300 dark:bg-light">
+                            &nbsp;
+                        </span>
+                    </h2>
+                </Link>
                 <div className='mt-4 grid items-center grid-cols-2 sm:mt-2 w-full gap-4 sm:gap-2'>
                     <Link
                         href={github}
@@ -235,8 +246,19 @@ export default function projects() {
                             </div>
                         ))}
                     </div>
-                    <h2 className="mt-24 mb-6 text-2xl font-semibold">Projects</h2>
-                    <div className='grid grid-cols-12 gap-4 gap-y-7'>
+                    <motion.div
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                                duration: 0.5,
+                                ease: 'easeInOut',
+                                staggerChildren: 0.08,
+                            }
+                        }}
+                        className='mt-20 grid grid-cols-12 gap-4 gap-y-7'
+                    >
                         {ProjectList.map((project, id) => project.type === 'Project' && (
                             <div key={id} className="col-span-3 lg:col-span-4 md:col-span-6 sm:col-span-12" >
                                 <Project
@@ -249,7 +271,7 @@ export default function projects() {
                                 />
                             </div>
                         ))}
-                    </div>
+                    </motion.div>
                 </Layout>
             </main >
         </>
