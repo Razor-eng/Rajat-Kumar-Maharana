@@ -26,6 +26,18 @@ export const FeaturedProjectList = [
         summary: `A fully responsive E-Commerce website with admin panel to upload or update any product as well to change the status of orders.`
     },
     {
+        title: 'Docx',
+        link: 'https://docx-r.vercel.app/',
+        GitHub: 'https://github.com/Razor-eng/Docs-2024',
+        photoUrl: [
+            '/images/projects/Docs/img1.png',
+            '/images/projects/Docs/img2.png',
+        ],
+        type: "Featured Project",
+        techs: ['Next', 'React', 'TailwindCSS', 'Convex', 'Clerk'],
+        summary: `Docs is a responsive, real-time document editing application inspired by Microsoft Word. It allows users to create, edit, and collaborate on documents seamlessly.`
+    },
+    {
         title: 'Jira',
         link: 'https://jira-2024.vercel.app/',
         GitHub: 'https://github.com/Razor-eng/Jira-2024',
