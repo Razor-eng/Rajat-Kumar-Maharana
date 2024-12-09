@@ -111,6 +111,16 @@ export const ProjectList = [
         summary: `A fully responsive chat app to communicate as well add new friend.`
     },
     {
+        title: 'Nike',
+        link: 'https://nike-2024.vercel.app/',
+        GitHub: 'https://github.com/Razor-eng/Nike-2024',
+        photoUrl: [
+            '/images/projects/Nike/img1.png',
+            '/images/projects/Nike/img2.png',
+        ],
+        type: "Project",
+    },
+    {
         title: 'Student Management System',
         link: 'https://stms-2024.vercel.app/',
         GitHub: 'https://github.com/Razor-eng/Student-Management-System-2024',
